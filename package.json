@@ -1,0 +1,23 @@
+{
+  "name": "gridlock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelnisi/gridlock.git"
+  },
+  "keywords": [],
+  "author": "Michael Nisi <michael.nisi@gmail.com> (http://michaelnisi.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelnisi/gridlock/issues"
+  },
+  "homepage": "https://github.com/michaelnisi/gridlock",
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "^0.4.12"
+  }
+}
