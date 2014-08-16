@@ -1,15 +1,16 @@
 {
   "name": "gridlock",
+  "description": "lock one thing",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tap --tap test.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/michaelnisi/gridlock.git"
   },
-  "keywords": [],
+  "keywords": ["simple", "lock", "mechanism"],
   "author": "Michael Nisi <michael.nisi@gmail.com> (http://michaelnisi.com/)",
   "license": "MIT",
   "bugs": {

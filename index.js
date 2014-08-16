@@ -1,8 +1,9 @@
 
+// gridlock - lock one thing
+
 module.exports = exports = Gridlock
 
-var assert = require('assert')
-  , events = require('events')
+var events = require('events')
   , util = require('util')
   ;
 
@@ -10,14 +11,14 @@ util.inherits(Gridlock, events.EventEmitter)
 function Gridlock () {
   if (!(this instanceof Gridlock)) return new Gridlock()
   events.EventEmitter.call(this)
-  this.maxListeners = Infinity
+  this.locks = Object.create(null)
 }
 
-Gridlock.prototype.lock = function (str) {
-  return this[str] || !(this[str] = true)
+Gridlock.prototype.lock = function (id) {
+  return this.locks[id] || !(this.locks[id] = true)
 }
 
-Gridlock.prototype.unlock = function (str) {
-  delete this[str]
-  this.emit(str, str)
+Gridlock.prototype.unlock = function (id) {
+  delete this.locks[id]
+  this.emit(id, id)
 }
