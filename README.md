@@ -8,7 +8,7 @@ The Gridlock [Node.js](http://nodejs.org/) module provides a simple locking mech
 ## Usage
 
 ```js
-var gridlock = require('./')
+var gridlock = require('gridlock')
 
 function op (cb) {
   setTimeout(cb, 1000)
@@ -34,13 +34,13 @@ Returns a new `locker` which is an instance of [`EventEmitter`](http://nodejs.or
 
 ### locker.lock(id)
 
-Tries to store the provided identifier. Returns `false` if it succeeds and `true` if it fails which means the `id` has already been stored (locked).
+Tries to store the provided identifier. Returns `false` if it succeeds and `true` if it fails meaning the `id` has already been stored (locked).
 
 - `id` `String()` is the identifier of a thing
 
 ### locker.unlock(id)
 
-Unlocks the identifier and emits the value of `id`.
+Releases the provided identifier and emits it.
 
 - `id` `String()` is the identifier of a thing
 

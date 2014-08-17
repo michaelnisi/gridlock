@@ -5,15 +5,15 @@ var test = require('tap').test
 
 test('it', function (t) {
   var f = gridlock()
-  var str = 'lock'
-  t.notok(f.lock(str))
-  t.ok(f.lock(str))
-  f.once(str, function (str) {
-    t.is(str, str)
-    t.notok(f.lock(str))
-    t.ok(f.lock(str))
-    f.unlock(str)
+  var id = 'lock'
+  t.notok(f.lock(id), 'should not be locked')
+  t.ok(f.lock(id), 'should be locked')
+  f.once(id, function (id) {
+    t.is(id, id)
+    t.notok(f.lock(id), 'should not be locked')
+    t.ok(f.lock(id), 'should be locked')
+    f.unlock(id)
     t.end()
   })
-  f.unlock(str)
+  f.unlock(id)
 })
