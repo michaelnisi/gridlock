@@ -1,11 +1,9 @@
-
 // gridlock - lock one thing
 
 module.exports = exports = Gridlock
 
 var events = require('events')
-  , util = require('util')
-  ;
+var util = require('util')
 
 util.inherits(Gridlock, events.EventEmitter)
 function Gridlock () {
