@@ -1,4 +1,3 @@
-
 var gridlock = require('./')
 
 function op (cb) {

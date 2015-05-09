@@ -1,7 +1,5 @@
-
 var test = require('tap').test
-  , gridlock = require('./')
-  ;
+var gridlock = require('./')
 
 test('it', function (t) {
   var f = gridlock()

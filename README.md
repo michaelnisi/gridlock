@@ -1,9 +1,9 @@
 
 # gridlock - lock one thing
 
-The Gridlock [Node.js](http://nodejs.org/) module provides a simple locking mechanism for single things.
+The **gridlock** [Node.js](http://nodejs.org/) module provides a simple locking mechanism for single things.
 
-[![Build Status](https://secure.travis-ci.org/michaelnisi/gridlock.svg)](http://travis-ci.org/michaelnisi/gridlock) [![David DM](https://david-dm.org/michaelnisi/gridlock.svg)](http://david-dm.org/michaelnisi/gridlock)
+[![Build Status](https://secure.travis-ci.org/michaelnisi/gridlock.svg)](http://travis-ci.org/michaelnisi/gridlock)
 
 ## Usage
 
